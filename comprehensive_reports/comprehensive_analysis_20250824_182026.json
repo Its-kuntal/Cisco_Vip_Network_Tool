@@ -1,0 +1,236 @@
+{
+  "validation": {
+    "missing_components": [
+      "PC PC1 not connected to an access switch",
+      "PC PC2 not connected to an access switch",
+      "PC PC3 not connected to an access switch",
+      "PC PC4 not connected to an access switch",
+      "PC PC5 not connected to an access switch",
+      "PC PC6 not connected to an access switch",
+      "PC S1 not connected to an access switch",
+      "PC S2 not connected to an access switch",
+      "PC S3 not connected to an access switch"
+    ],
+    "duplicate_ips": [],
+    "vlan_issues": [],
+    "gateway_issues": [],
+    "routing_recommendations": [
+      "Device PC1 has BGP configuration present",
+      "Device PC2 has BGP configuration present",
+      "Device PC3 has BGP configuration present",
+      "Device PC4 has BGP configuration present",
+      "Device PC5 has BGP configuration present",
+      "Device PC6 has BGP configuration present",
+      "Device R1 has BGP configuration present",
+      "Device R2 has BGP configuration present",
+      "Device R3 has BGP configuration present",
+      "Device S1 has BGP configuration present",
+      "Device S2 has BGP configuration present",
+      "Device S3 has BGP configuration present"
+    ],
+    "mtu_mismatches": [],
+    "network_loops": [
+      "PC3 -> PC4",
+      "PC3 -> PC4 -> R2",
+      "PC3 -> PC4 -> R2 -> S2",
+      "PC3 -> PC4 -> S2",
+      "PC3 -> PC4 -> S2 -> R2",
+      "PC3 -> R2",
+      "PC3 -> R2 -> PC4",
+      "PC3 -> R2 -> PC4 -> S2",
+      "PC3 -> R2 -> S2",
+      "PC3 -> R2 -> S2 -> PC4",
+      "PC3 -> S2",
+      "PC3 -> S2 -> PC4",
+      "PC3 -> S2 -> PC4 -> R2",
+      "PC3 -> S2 -> R2",
+      "PC3 -> S2 -> R2 -> PC4",
+      "PC2 -> PC1",
+      "PC2 -> PC1 -> R1",
+      "PC2 -> PC1 -> R1 -> S1",
+      "PC2 -> PC1 -> S1",
+      "PC2 -> PC1 -> S1 -> R1",
+      "PC2 -> R1 -> PC1",
+      "PC2 -> R1 -> PC1 -> S1",
+      "PC2 -> R1",
+      "PC2 -> R1 -> S1 -> PC1",
+      "PC2 -> R1 -> S1",
+      "PC2 -> S1 -> PC1",
+      "PC2 -> S1 -> PC1 -> R1",
+      "PC2 -> S1",
+      "PC2 -> S1 -> R1 -> PC1",
+      "PC2 -> S1 -> R1",
+      "PC6 -> PC5",
+      "PC6 -> PC5 -> R3",
+      "PC6 -> PC5 -> R3 -> S3",
+      "PC6 -> PC5 -> S3",
+      "PC6 -> PC5 -> S3 -> R3",
+      "PC6 -> R3 -> PC5",
+      "PC6 -> R3 -> PC5 -> S3",
+      "PC6 -> R3",
+      "PC6 -> R3 -> S3 -> PC5",
+      "PC6 -> R3 -> S3",
+      "PC6 -> S3 -> PC5",
+      "PC6 -> S3 -> PC5 -> R3",
+      "PC6 -> S3",
+      "PC6 -> S3 -> R3 -> PC5",
+      "PC6 -> S3 -> R3",
+      "PC5 -> R3",
+      "PC5 -> R3 -> S3",
+      "PC5 -> S3",
+      "PC5 -> S3 -> R3",
+      "S3 -> R3",
+      "R1 -> PC1",
+      "R1 -> PC1 -> S1",
+      "R1 -> S1 -> PC1",
+      "R1 -> S1",
+      "R1 -> R2",
+      "R1 -> R2 -> R3",
+      "R1 -> R3 -> R2",
+      "R1 -> R3",
+      "S2 -> PC4 -> R2",
+      "S2 -> PC4",
+      "S2 -> R2 -> PC4",
+      "S2 -> R2",
+      "R2 -> PC4",
+      "R2 -> R3",
+      "S1 -> PC1"
+    ],
+    "aggregation_opportunities": []
+  },
+  "traffic": {
+    "link_utilization": {
+      "PC1-PC2": {
+        "capacity_mbps": 1000,
+        "estimated_traffic_mbps": 60.0,
+        "utilization_percent": 6.0,
+        "link_type": "subnet"
+      },
+      "PC1-R1": {
+        "capacity_mbps": 1000,
+        "estimated_traffic_mbps": 80.0,
+        "utilization_percent": 8.0,
+        "link_type": "subnet"
+      },
+      "PC1-S1": {
+        "capacity_mbps": 1000,
+        "estimated_traffic_mbps": 60.0,
+        "utilization_percent": 6.0,
+        "link_type": "subnet"
+      },
+      "PC2-R1": {
+        "capacity_mbps": 1000,
+        "estimated_traffic_mbps": 80.0,
+        "utilization_percent": 8.0,
+        "link_type": "subnet"
+      },
+      "PC2-S1": {
+        "capacity_mbps": 1000,
+        "estimated_traffic_mbps": 60.0,
+        "utilization_percent": 6.0,
+        "link_type": "subnet"
+      },
+      "PC3-PC4": {
+        "capacity_mbps": 1000,
+        "estimated_traffic_mbps": 60.0,
+        "utilization_percent": 6.0,
+        "link_type": "subnet"
+      },
+      "PC3-R2": {
+        "capacity_mbps": 1000,
+        "estimated_traffic_mbps": 80.0,
+        "utilization_percent": 8.0,
+        "link_type": "subnet"
+      },
+      "PC3-S2": {
+        "capacity_mbps": 1000,
+        "estimated_traffic_mbps": 60.0,
+        "utilization_percent": 6.0,
+        "link_type": "subnet"
+      },
+      "PC4-R2": {
+        "capacity_mbps": 1000,
+        "estimated_traffic_mbps": 80.0,
+        "utilization_percent": 8.0,
+        "link_type": "subnet"
+      },
+      "PC4-S2": {
+        "capacity_mbps": 1000,
+        "estimated_traffic_mbps": 60.0,
+        "utilization_percent": 6.0,
+        "link_type": "subnet"
+      },
+      "PC5-PC6": {
+        "capacity_mbps": 1000,
+        "estimated_traffic_mbps": 60.0,
+        "utilization_percent": 6.0,
+        "link_type": "subnet"
+      },
+      "PC5-R3": {
+        "capacity_mbps": 1000,
+        "estimated_traffic_mbps": 80.0,
+        "utilization_percent": 8.0,
+        "link_type": "subnet"
+      },
+      "PC5-S3": {
+        "capacity_mbps": 1000,
+        "estimated_traffic_mbps": 60.0,
+        "utilization_percent": 6.0,
+        "link_type": "subnet"
+      },
+      "PC6-R3": {
+        "capacity_mbps": 1000,
+        "estimated_traffic_mbps": 80.0,
+        "utilization_percent": 8.0,
+        "link_type": "subnet"
+      },
+      "PC6-S3": {
+        "capacity_mbps": 1000,
+        "estimated_traffic_mbps": 60.0,
+        "utilization_percent": 6.0,
+        "link_type": "subnet"
+      },
+      "R1-S1": {
+        "capacity_mbps": 1000,
+        "estimated_traffic_mbps": 80.0,
+        "utilization_percent": 8.0,
+        "link_type": "subnet"
+      },
+      "R1-R2": {
+        "capacity_mbps": 1000,
+        "estimated_traffic_mbps": 100.0,
+        "utilization_percent": 10.0,
+        "link_type": "subnet"
+      },
+      "R1-R3": {
+        "capacity_mbps": 1000,
+        "estimated_traffic_mbps": 100.0,
+        "utilization_percent": 10.0,
+        "link_type": "desc"
+      },
+      "R2-S2": {
+        "capacity_mbps": 1000,
+        "estimated_traffic_mbps": 80.0,
+        "utilization_percent": 8.0,
+        "link_type": "subnet"
+      },
+      "R2-R3": {
+        "capacity_mbps": 1000,
+        "estimated_traffic_mbps": 100.0,
+        "utilization_percent": 10.0,
+        "link_type": "subnet"
+      },
+      "R3-S3": {
+        "capacity_mbps": 1000,
+        "estimated_traffic_mbps": 80.0,
+        "utilization_percent": 8.0,
+        "link_type": "subnet"
+      }
+    },
+    "bottlenecks": [],
+    "load_balancing_recommendations": []
+  },
+  "arp": null,
+  "ospf": null,
+  "bgp": null
+}

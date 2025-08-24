@@ -1,0 +1,19 @@
+
+        <html>
+        <head>
+            <script type="text/javascript" src="lib/vis-9.1.2/vis-network.min.js"></script>
+            <link rel="stylesheet" href="lib/vis-9.1.2/vis-network.min.css"/>
+        </head>
+        <body>
+            <div id="mynetwork" style="width:100%; height:800px; border:1px solid lightgray;"></div>
+            <script type="text/javascript">
+                var nodes = new vis.DataSet([{'id': 'PC1', 'label': 'PC1'}, {'id': 'PC2', 'label': 'PC2'}, {'id': 'PC3', 'label': 'PC3'}, {'id': 'PC4', 'label': 'PC4'}, {'id': 'PC5', 'label': 'PC5'}, {'id': 'PC6', 'label': 'PC6'}, {'id': 'R1', 'label': 'R1'}, {'id': 'R2', 'label': 'R2'}, {'id': 'R3', 'label': 'R3'}, {'id': 'S1', 'label': 'S1'}, {'id': 'S2', 'label': 'S2'}, {'id': 'S3', 'label': 'S3'}]);
+                var edges = new vis.DataSet([{'from': 'PC1', 'to': 'R1', 'label': 'subnet', 'title': 'bw='}, {'from': 'PC1', 'to': 'S1', 'label': 'subnet', 'title': 'bw='}, {'from': 'PC1', 'to': 'PC2', 'label': '', 'title': 'bw='}, {'from': 'PC2', 'to': 'R1', 'label': 'subnet', 'title': 'bw='}, {'from': 'PC2', 'to': 'S1', 'label': 'subnet', 'title': 'bw='}, {'from': 'PC3', 'to': 'PC4', 'label': 'subnet', 'title': 'bw='}, {'from': 'PC3', 'to': 'R2', 'label': 'subnet', 'title': 'bw='}, {'from': 'PC3', 'to': 'S2', 'label': 'subnet', 'title': 'bw='}, {'from': 'PC4', 'to': 'R2', 'label': 'subnet', 'title': 'bw='}, {'from': 'PC4', 'to': 'S2', 'label': 'subnet', 'title': 'bw='}, {'from': 'PC5', 'to': 'PC6', 'label': 'subnet', 'title': 'bw='}, {'from': 'PC5', 'to': 'R3', 'label': 'subnet', 'title': 'bw='}, {'from': 'PC5', 'to': 'S3', 'label': 'subnet', 'title': 'bw='}, {'from': 'PC6', 'to': 'R3', 'label': 'subnet', 'title': 'bw='}, {'from': 'PC6', 'to': 'S3', 'label': 'subnet', 'title': 'bw='}, {'from': 'R1', 'to': 'S1', 'label': 'subnet', 'title': 'bw='}, {'from': 'R1', 'to': 'R2', 'label': 'subnet', 'title': 'bw='}, {'from': 'R1', 'to': 'R3', 'label': 'desc', 'title': 'bw='}, {'from': 'R2', 'to': 'S2', 'label': 'subnet', 'title': 'bw='}, {'from': 'R2', 'to': 'R3', 'label': 'subnet', 'title': 'bw='}, {'from': 'R3', 'to': 'S3', 'label': 'subnet', 'title': 'bw='}]);
+                var container = document.getElementById('mynetwork');
+                var data = {nodes:nodes, edges:edges};
+                var options = {};
+                var network = new vis.Network(container, data, options);
+            </script>
+        </body>
+        </html>
+        
